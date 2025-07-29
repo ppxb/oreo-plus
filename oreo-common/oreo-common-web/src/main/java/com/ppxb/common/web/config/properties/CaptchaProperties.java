@@ -1,18 +1,23 @@
 package com.ppxb.common.web.config.properties;
+
 import com.ppxb.common.web.enums.CaptchaCategory;
 import com.ppxb.common.web.enums.CaptchaType;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * 验证码 配置属性
+ * 验证码配置属性
  *
- * @author Lion Li
+ * @author ppxb
+ * @since 1.0.0
  */
 @Data
 @ConfigurationProperties(prefix = "captcha")
 public class CaptchaProperties {
 
+    /**
+     * 是否启用验证码
+     */
     private Boolean enable;
 
     /**

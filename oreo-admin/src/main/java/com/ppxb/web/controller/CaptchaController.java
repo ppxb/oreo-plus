@@ -1,12 +1,10 @@
 package com.ppxb.web.controller;
+
 import cn.dev33.satoken.annotation.SaIgnore;
 import cn.hutool.captcha.AbstractCaptcha;
 import cn.hutool.captcha.generator.CodeGenerator;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.RandomUtil;
-import jakarta.validation.constraints.NotBlank;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import com.ppxb.common.core.constant.Constants;
 import com.ppxb.common.core.constant.GlobalConstants;
 import com.ppxb.common.core.domain.R;
@@ -21,10 +19,13 @@ import com.ppxb.common.ratelimiter.enums.LimitType;
 import com.ppxb.common.redis.utils.RedisUtils;
 import com.ppxb.common.web.config.properties.CaptchaProperties;
 import com.ppxb.common.web.enums.CaptchaType;
+import com.ppxb.web.domain.vo.CaptchaVo;
+import jakarta.validation.constraints.NotBlank;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.dromara.sms4j.api.SmsBlend;
 import org.dromara.sms4j.api.entity.SmsResponse;
 import org.dromara.sms4j.core.factory.SmsFactory;
-import com.ppxb.web.domain.vo.CaptchaVo;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
@@ -36,18 +37,20 @@ import java.time.Duration;
 import java.util.LinkedHashMap;
 
 /**
- * 验证码操作处理
+ * 验证码控制器
  *
- * @author Lion Li
+ * @author ppxb
+ * @since 1.0.0
  */
-@SaIgnore
 @Slf4j
+@SaIgnore
 @Validated
 @RequiredArgsConstructor
 @RestController
 public class CaptchaController {
 
     private final CaptchaProperties captchaProperties;
+
     private final MailProperties mailProperties;
 
     /**
@@ -149,5 +152,4 @@ public class CaptchaController {
         captchaVo.setImg(captcha.getImageBase64());
         return captchaVo;
     }
-
 }

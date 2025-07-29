@@ -1,4 +1,5 @@
 package com.ppxb.common.web.enums;
+
 import cn.hutool.captcha.generator.CodeGenerator;
 import cn.hutool.captcha.generator.RandomGenerator;
 import com.ppxb.common.web.utils.UnsignedMathGenerator;
@@ -8,7 +9,8 @@ import lombok.Getter;
 /**
  * 验证码类型
  *
- * @author Lion Li
+ * @author ppxb
+ * @since 1.0.0
  */
 @Getter
 @AllArgsConstructor
