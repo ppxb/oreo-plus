@@ -1,0 +1,6 @@
+com.ppxb.common.translation.config.TranslationConfig
+com.ppxb.common.translation.core.impl.DeptNameTranslationImpl
+com.ppxb.common.translation.core.impl.DictTypeTranslationImpl
+com.ppxb.common.translation.core.impl.OssUrlTranslationImpl
+com.ppxb.common.translation.core.impl.UserNameTranslationImpl
+com.ppxb.common.translation.core.impl.NicknameTranslationImpl

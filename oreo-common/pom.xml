@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>oreo-plus</artifactId>
+        <groupId>com.ppxb</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>oreo-common-bom</module>
+        <module>oreo-common-social</module>
+        <module>oreo-common-core</module>
+        <module>oreo-common-doc</module>
+        <module>oreo-common-excel</module>
+        <module>oreo-common-idempotent</module>
+        <module>oreo-common-job</module>
+        <module>oreo-common-log</module>
+        <module>oreo-common-mail</module>
+        <module>oreo-common-mybatis</module>
+        <module>oreo-common-oss</module>
+        <module>oreo-common-ratelimiter</module>
+        <module>oreo-common-redis</module>
+        <module>oreo-common-satoken</module>
+        <module>oreo-common-security</module>
+        <module>oreo-common-sms</module>
+        <module>oreo-common-web</module>
+        <module>oreo-common-translation</module>
+        <module>oreo-common-sensitive</module>
+        <module>oreo-common-json</module>
+        <module>oreo-common-encrypt</module>
+        <module>oreo-common-tenant</module>
+        <module>oreo-common-websocket</module>
+        <module>oreo-common-sse</module>
+    </modules>
+
+    <artifactId>oreo-common</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        common 通用模块
+    </description>
+
+</project>

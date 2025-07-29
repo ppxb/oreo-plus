@@ -1,0 +1,3 @@
+com.ppxb.common.encrypt.config.EncryptorAutoConfiguration
+com.ppxb.common.encrypt.config.ApiDecryptAutoConfiguration
+

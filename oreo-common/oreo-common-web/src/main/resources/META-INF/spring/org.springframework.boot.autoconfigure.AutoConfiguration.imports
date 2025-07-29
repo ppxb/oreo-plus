@@ -1,0 +1,5 @@
+com.ppxb.common.web.config.CaptchaConfig
+com.ppxb.common.web.config.FilterConfig
+com.ppxb.common.web.config.I18nConfig
+com.ppxb.common.web.config.ResourcesConfig
+com.ppxb.common.web.config.UndertowConfig

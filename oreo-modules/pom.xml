@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>oreo-plus</artifactId>
+        <groupId>com.ppxb</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>oreo-demo</module>
+        <module>oreo-generator</module>
+        <module>oreo-job</module>
+        <module>oreo-system</module>
+        <module>oreo-workflow</module>
+    </modules>
+
+    <artifactId>oreo-modules</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        ruoyi-modules 业务模块
+    </description>
+
+</project>
